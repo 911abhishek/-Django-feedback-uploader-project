@@ -28,7 +28,7 @@ for file in os.listdir(dir_path):
 
     feedback_list.append(feedback_dict)
 
-url = "http://34.145.70.216/feedback"
+url = "http://<ip->/feedback"
 for feedback in feedback_list:
     response = requests.post(url,feedback)
     if response.status_code == 201:
